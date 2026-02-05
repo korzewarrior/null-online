@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Null Online</title>
+  <meta name="description" content="A minimalist MMO. One pixel. Infinite space. No unnecessary features." />
+  <meta property="og:title" content="Null Online" />
+  <meta property="og:description" content="One pixel. Infinite space. Zero scope creep." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Null Online" />
+  <meta name="twitter:description" content="One pixel. Infinite space. Zero scope creep." />
+
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      font-size: 16px;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #0c0c0e;
+      color: #b8b8c0;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+    
+    .content {
+      width: 100%;
+      max-width: 480px;
+    }
+    
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    
+    .pixel {
+      width: 10px;
+      height: 10px;
+      background: #ffffff;
+      border-radius: 50%;
+      margin: 0 auto 2.5rem;
+      box-shadow: 0 0 24px rgba(255, 255, 255, 0.25);
+    }
+    
+    .title {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    
+    .tagline {
+      font-size: 0.9375rem;
+      color: #888890;
+      letter-spacing: 0.02em;
+    }
+    
+    /* Features Grid */
+    .features {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      margin-bottom: 4rem;
+      padding: 0 1rem;
+    }
+    
+    .feature-col {
+      flex: 1;
+    }
+    
+    .feature-col h2 {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #606068;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #252530;
+    }
+    
+    .feature-col ul {
+      list-style: none;
+    }
+    
+    .feature-col li {
+      font-size: 0.875rem;
+      color: #a0a0a8;
+      padding: 0.375rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+    
+    .feature-col li::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    
+    .feature-col.can li::before {
+      background: #4a9d7c;
+    }
+    
+    .feature-col.cannot li::before {
+      background: #3a3a42;
+    }
+    
+    .feature-col.cannot li {
+      color: #707078;
+    }
+    
+    /* Download Section */
+    .download {
+      text-align: center;
+    }
+    
+    .download-btn {
+      display: inline-block;
+      padding: 0.875rem 2.5rem;
+      background: #ffffff;
+      color: #0c0c0e;
+      text-decoration: none;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      transition: opacity 0.15s ease, transform 0.15s ease;
+    }
+    
+    .download-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+    
+    .download-btn:active {
+      transform: translateY(0);
+    }
+    
+    .meta {
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: #606068;
+      letter-spacing: 0.04em;
+    }
+    
+    .meta span {
+      display: inline-block;
+    }
+    
+    .meta .sep {
+      margin: 0 0.75rem;
+      opacity: 0.5;
+    }
+    
+    /* Footer */
+    .footer {
+      margin-top: 5rem;
+      text-align: center;
+      font-size: 0.6875rem;
+      color: #484850;
+      letter-spacing: 0.08em;
+    }
+    
+    /* Responsive */
+    @media (max-width: 480px) {
+      .title {
+        font-size: 1.5rem;
+        letter-spacing: 0.2em;
+      }
+      
+      .features {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+      }
+      
+      .download-btn {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="content">
+      
+      <header class="hero">
+        <div class="pixel"></div>
+        <h1 class="title">NULL ONLINE</h1>
+        <p class="tagline">One pixel. Infinite space. No unnecessary features.</p>
+      </header>
+      
+      <section class="features">
+        <div class="feature-col can">
+          <h2>You can</h2>
+          <ul>
+            <li>Move through infinite space</li>
+            <li>See nearby players</li>
+            <li>Chat with others</li>
+            <li>Exist</li>
+          </ul>
+        </div>
+        
+        <div class="feature-col cannot">
+          <h2>You cannot</h2>
+          <ul>
+            <li>Fight</li>
+            <li>Trade</li>
+            <li>Quest</li>
+            <li>Anything else</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="download">
+        <a class="download-btn" href="NullOnline.exe" download>DOWNLOAD</a>
+        <p class="meta">
+          <span>Windows</span>
+          <span class="sep">/</span>
+          <span>2 MB</span>
+          <span class="sep">/</span>
+          <span>Free</span>
+        </p>
+      </section>
+      
+      <footer class="footer">
+        A game that shipped.
+      </footer>
+      
+    </div>
+  </div>
+</body>
+</html>
